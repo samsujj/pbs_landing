@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media(max-width:1199px){
+
+.row{ padding:0;}
+.container-fluid { padding-left:0; padding-right:0; width:100%;}
+
+.container { padding-left:0; padding-right:0; width:80%; margin-left:auto; margin-right:auto;}
+
+
+.pbs_body_sction1_left .pbs_body_sction1_leftimg1{ display:none;}
+.pbs_body_sction1_left .pbs_body_sction1_left_img{ display:block; margin:20px auto; float:none;}
+.pbs_body_sction1_left .pbs_body_sction1_left_text{width:100%; float:none; text-align:center;}
+.pbs_body_sction1_left h2{ text-align:center;}
+
+.pbs_body_sction1_right{ width:80%; float:none; margin:0 auto; overflow:hidden; margin-top:64px;} 
+.pbs_body_sction1_right .form_block_top{background:#000; height:auto; text-align:center; padding:26px 22px; font-family:'OpenSans-Bold'; font-size:34px; color:#e9f5f6; line-height:36px; font-weight:bold;}
+.pbs_body_sction1_right .form_block_mddle{padding:0 15px; text-align:center;}
+
+.pbs_body_sction1_right .formdiv{ width:80%; margin:0 auto; margin-top:10px; margin-bottom:38px; text-align:left;}
+
+.pbs_body_sction1_bottom{background:#efc532; margin:0 auto; padding:0px; position:inherit; height:auto; margin-top:0; z-index:110;}
+.pbs_body_sction1_bottom .pbs_body_sction1_bottom_content{position:inherit; padding:0px;  width:100%;}
+.pbs_body_sction1_bottom .pbs_body_sction1_bottom_content h1{font-family:'OpenSans-Bold';  font-weight:bold; text-transform:uppercase; font-size:30px; margin:0px; padding:30px 0;  color:#fff; text-shadow:0px 0px 3px rgba(0, 0, 0, 0.2); margin-top:0; width:100%; text-align:center;}
+
+
+
+.pbs_body_sction1{background: #f5ae4b url(../images/pbs_body_sction1bg.png) no-repeat  bottom center;  padding:24px 0 24px 0; margin:0 auto; background-size:cover; position:relative; z-index:111;}
+
+.pbs_body_sction2 .pbs_body_sction2_topcontent{ background:none; width:450px; margin:0 auto; padding-top:40px;}
+
+.pbs_body_sction2 p{ text-align:center;}
+
+.pbs_body_sction3_containright{ padding-top:50px;}
+
+.pbs_body_sction3_containright h1{ text-align:center;}
+
+.pbs_body_sction1_left p{ width:100%; text-align:center;}
+
+
+	.chakeoutarrow{ display:none;}
+	
+	.chakeoutround{ background:url(../images/chakeout1.png) no-repeat; width:321px; height:306px; position:inherit; left:0px; top:0px; background-size:100%; margin:25px auto; overflow:hidden;}
+	
+	.chakeoutbox{ margin-top:0px;}
+}
+
+@media(max-width:767px){
+.container { padding-left:0; padding-right:0; width:90%; margin-left:auto; margin-right:auto;}
+
+.pbs_body_sction1_right{ width:90%; margin:0 auto;}
+}
+
+@media(max-width:640px){
+.home_footer .logo_con{margin:27px auto; width:100%;}
+
+.home_footer p{ padding:0; text-align:center; float:none; margin:0;}
+
+.home_footer{ padding-bottom:15px;}
+
+.get_started{ width:100%; font-size:26px; height:65px; line-height:65px;}
+
+	.chakeoutbox{ margin-top:0px; width:90%;}
+	.chakeoutbox .chakeoutform{  width:80%; margin:35px auto;}
+
+}
+
+@media(max-width:480px){
+
+.logo_con{float:none; width:100%; margin:15px auto;  margin-top:25px;}
+.pbs_body_sction1_left .pbs_body_sction1_left_text h4{ font-size:32px;}
+.pbs_top_section_block_right{float:none; width:110px; margin:25px auto;}
+.pbs_body_sction1_right .formdiv{ width:100%; margin:0 auto; margin-top:10px; margin-bottom:38px; text-align:left;}
+
+
+
+.pbs_body_sction2{ padding:0;}
+.pbs_body_sction2 .pbs_body_sction2_topcontent{ width:100%;}
+.pbs_body_sction2 .pbs_body_sction2_topcontent h1{ width:auto; text-align:center; font-size:30px;}
+.pbs_body_sction2 .pbs_body_sction2_topcontent h1 img{ display:none;}
+.pbs_body_sction2 .pbs_body_sction2_topcontent h1 span{ display:inline-block;}
+
+
+.pbs_body_sction3_containright .macblock{background:none;  height:auto;  width:90%; border:solid 6px #111; border-radius:5px; padding:0; background:#111; margin:0 auto;}
+
+
+.macblockdiv{ padding:0px; overflow:inherit; height:auto;}
+
+.pbs_body_sction3_block4_contain_list_left{width:100%; float:none;}
+.pbs_body_sction3_block4_contain_list_right{width:100%; float:none;}
+
+ 
+ 
+ 
+.pbs_body_sction3_block1{background:#f4f4f4; padding:10px; border-bottom:solid 1px #ffffff; padding-bottom:25px;}
+  .pbs_body_sction3_block2{background:#fdf6ed; padding:10px; border-bottom:solid 1px #ffffff; padding-bottom:25px;}
+  .pbs_body_sction3_block3{background:#fdf6ed; padding:10px; border-bottom:solid 1px #ffffff; padding-bottom:25px;}
+  
+  .pbs_body_sction3_block3 ul li{ background:none; text-align:center;}
+  
+  .pbs_body_sction3_block5_contain{background:url(../images/pbs_body_sction3_no5.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+ 
+  .pbs_body_sction3_block6_contain{background:url(../images/pbs_body_sction3_no6.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+  
+  .pbs_body_sction3_block7_contain{background:url(../images/pbs_body_sction3_no7.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+  
+   .pbs_body_sction3_block8_contain{background:url(../images/pbs_body_sction3_no8.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+   
+    .pbs_body_sction3_block2 .pbs_body_sction3_block2_contain{background:url(../images/pbs_body_sction3_no2.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+
+
+ .pbs_body_sction3_block3_contain{background:url(../images/pbs_body_sction3_no3.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+
+
+ .pbs_body_sction3_block4_contain{background:url(../images/pbs_body_sction3_no4.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+ 
+ .pbs_body_sction3_block1_contain{background:url(../images/pbs_body_sction3_no1.png) no-repeat top center;  padding:55px 0 0 0; text-align:center;}
+ 
+ 
+ .chakeoutbox .chakeoutform .formbox1{ width:100%; float:none; margin-bottom:14px;}
+.chakeoutbox .chakeoutform .formbox2{ width:100%; float:none; margin-bottom:14px;}
+
+.chakeoutbox .chakeoutform .formbox3{ width:100%; float:none; margin-bottom:14px;}
+
+
+.chakeoutbox .chakeoutform .formbox4{width:100%; float:none; margin-bottom:14px;}
+.chakeoutbox .chakeoutform .formbox5{ width:100%; float:none; margin-bottom:14px;}
+.chakeoutbox .chakeoutform .formbox6{ width:100%; float:none; margin-bottom:14px;}
+
+.chakeoutbox .chakeoutform .formbox7 input[type="text"]{ width:100%;}
+.chakeoutbtn{ width:100%;}
+}
+
+
+@media(max-width:380px){
+.chakeoutbox .chakeoutform{  width:90%; margin:35px auto;}
+.chakeoutbtn{ width:100%; font-size:28px;}
+
+.chakeoutround{ background:url(../images/chakeout3.png) no-repeat; width:250px; height:250px; position:inherit; left:0px; top:0px; background-size:100%; margin:25px auto;}
+	.roundtext{margin: 65px 0 0 0px;}
+}
+
+
+
+

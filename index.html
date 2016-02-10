@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <base href="/pbs_landing/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>:: Power Branding Solutions ::</title>
+
+
+    <link href="images/favicon.png" rel="icon">
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+    <link href="css/media.css" type="text/css" rel="stylesheet" />
+
+    <script src="ng-js/jquery-1.11.3.min.js"></script>
+
+    <script src="ng-js/angular.js"></script>
+    <script src="ng-js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+    <script src="ng-js/angular-animate.min.js"></script>
+    <script src="ng-js/angular-ui-router.js"></script>
+    <script src="ng-js/ng-file-upload.js"></script>
+    <script src="ng-js/app.js"></script>
+    <script src="ng-js/angular-validator.js"></script>
+    <script src="ng-js/angular-cookies.js"></script>
+
+
+
+
+</head>
+<body ng-app="pbs_landing" ng-init="baseUrl = 'http://localhost/pbs_landing';adminUrl = 'http://localhost/pbs_landing/admin'" >
+
+<div ui-view="loader"></div>
+<div ui-view="header"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
+
+</body>
+</html>

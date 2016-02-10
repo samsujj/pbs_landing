@@ -1,0 +1,144 @@
+<div class="container-fluid innerbody">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 checkoutbody">
+
+
+                    <img src="images/chakeout2.png" alt="#" class="chakeoutarrow">
+
+                    <div class="chakeoutround">
+                        <div class="roundtext">
+                            basic <br>package
+                            <span>$89.95/mo </span>
+                        </div>
+                    </div>
+
+                    <div class="chakeoutbox">
+
+                        <h2>Setup Your Billing Profile Below.</h2>
+                        <div class="chakeoutform">
+
+                            <form angular-validator-submit="step2()" name="signUpForm" class="form-horizontal" novalidate angular-validator>
+
+                                <div class="formbox1">
+                                    <label>First Name</label>
+                                    <input type="text"  placeholder="First Name" name="fname"
+                                           validate-on="submission"
+                                           ng-model = "form.fname"
+                                           required-message="'First Name cannot be blank.'"
+                                           required>
+                                </div>
+                                <div class="formbox2">
+                                    <label>Last Name</label>
+                                    <input type="text"  placeholder="Last Name" name="lname"
+                                           validate-on="submission"
+                                           ng-model = "form.lname"
+                                           required-message="'Last Name cannot be blank.'"
+                                           required>
+                                </div>
+
+                                <div class="clear"></div>
+
+                                <div class="formbox3">
+                                    <label>Billing Address </label>
+                                    <input type="text"  placeholder="Billing Address" name="address"
+                                           validate-on="submission"
+                                           ng-model = "form.address"
+                                           required-message="'Address cannot be blank.'"
+                                           required>
+                                </div>
+
+
+                                <div class="formbox4">
+                                    <label>City </label>
+                                    <input type="text"  placeholder="City" name="city"
+                                           validate-on="submission"
+                                           ng-model = "form.city"
+                                           required-message="'City cannot be blank.'"
+                                           required>
+                                </div>
+
+
+                                <div class="formbox5">
+                                    <label>State </label>
+                                    <input type="text"  placeholder="State" name="state"
+                                           validate-on="submission"
+                                           ng-model = "form.state"
+                                           required-message="'State cannot be blank.'"
+                                           required>
+                                </div>
+
+                                <div class="formbox6">
+                                    <label>Zip </label>
+                                    <input type="text"  placeholder="Zip" name="zip"
+                                           validate-on="submission"
+                                           ng-model = "form.zip"
+                                           required-message="'Zip cannot be blank.'"
+                                           required>
+                                </div>
+                                <div class="clear"></div>
+
+
+                                <div class="formbox3">
+                                    <label>Credit Card Type  </label>
+                                    <select>
+                                        <option>Credit Card Type </option>
+                                        <option>Credit Card Type </option>
+                                        <option>Credit Card Type </option>
+                                    </select>
+                                    <!--<span class="errormsg">error msg</span>-->
+                                </div>
+
+                                <div class="formbox7">
+                                    <label>Credit Card Number </label>
+                                    <input type="text"  placeholder="Card Number" name="card_no"
+                                           validate-on="submission"
+                                           ng-model = "form.card_no"
+                                           required-message="'Card Number cannot be blank.'"
+                                           required>
+                                </div>
+
+                                <div class="formbox3">
+                                    <label>Expiration </label>
+                                    <input type="text">
+                                    <!--<span class="errormsg">error msg</span>-->
+                                </div>
+
+                                <div class="formbox3">
+                                    <label>CVV  </label>
+                                    <input type="text"  placeholder="CVV" name="cvv"
+                                           validate-on="submission"
+                                           ng-model = "form.cvv"
+                                           required-message="'CVV cannot be blank.'"
+                                           required>
+                                </div>
+
+                                <div class="formbox8">
+                                    <label>Terms & Conditions  </label>
+                                    <input name="sdfs" type="checkbox" value="1"
+                                           ng-model = "form.tnc" required-message="'Accept Terms & Conditions'"
+                                           required>
+
+                                    <!--<span class="errormsg">error msg</span>-->
+
+                                </div>
+
+                                <input type="submit" value="Create Listing" class="chakeoutbtn">
+
+                            </form>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

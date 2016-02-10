@@ -1,0 +1,88 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: debasis
+ * Date: 16/6/15
+ * Time: 12:04 AM
+ */
+
+define('CUSTOM_BASE_URL', 'http://testbed.documenttrunk.com');
+
+function customuser_permission() {
+    return array(
+        'ngmodule anonymous' => array(
+            'title' => t('Anonymous Actions '),
+            'description' => t('Anonymous Actions.'),
+        ),
+        'ngmodule loggedin' => array(
+            'title' => t('Logged in Actions '),
+            'description' => t('Logged in Actions.'),
+        ),
+        'ngmodule anonymous' => array(
+            'title' => t('Admin Actions '),
+            'description' => t('Admin Actions.'),
+        ),
+
+    );
+}
+
+
+function customuser_menu() {
+    $items = array();
+    $items['step1'] = array(
+        'title' => 'step1',
+        'page callback' => 'step1',
+        'access callback' => TRUE,
+        'access arguments' => array('Anonymous Actions.'),
+        'expanded' => TRUE,
+        //'type'=>MENU_NORMAL_ITEM,
+    );
+
+    $items['step2'] = array(
+        'title' => 'step2',
+        'page callback' => 'step2',
+        'access callback' => TRUE,
+        'access arguments' => array('Anonymous Actions.'),
+        'expanded' => TRUE,
+        //'type'=>MENU_NORMAL_ITEM,
+    );
+
+     return $items;
+}
+
+function step1(){
+
+    header('Content-type: text/html');
+    header('Access-Control-Allow-Origin: '.CUSTOM_BASE_URL);  //I have also tried the * wildcard and get the same response
+    header("Access-Control-Allow-Credentials: true");
+    header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+    header('Access-Control-Max-Age: 1000');
+    header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
+
+
+    $query = db_insert('custom_user')->fields(array('userid', 'fname', 'lname', 'email','time','address','city','state','zip'));
+
+    $query->values(array(0,@$_POST['fname'],@$_POST['lname'],@$_POST['email'],time(),'','','',''));
+
+    $nid=$query->execute();
+
+    echo $nid;
+}
+
+function step2(){
+
+    header('Content-type: text/html');
+    header('Access-Control-Allow-Origin: '.CUSTOM_BASE_URL);  //I have also tried the * wildcard and get the same response
+    header("Access-Control-Allow-Credentials: true");
+    header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+    header('Access-Control-Max-Age: 1000');
+    header('Access-Control-Allow-Headers: Content-Type, Content-Range, Content-Disposition, Content-Description');
+
+
+    db_update('custom_user')
+        ->fields(array('fname'=>$_POST['fname'], 'lname'=>$_POST['lname'], 'address'=>$_POST['address'],'city'=>$_POST['city'],'state'=>$_POST['state'],'zip'=>$_POST['zip']))
+        ->condition('id', $_POST['id'], '=')
+        ->execute();
+
+}
+
